@@ -1,21 +1,21 @@
-/* ==== BODY ==== */
+/* ==== GLOBAL ==== */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f5f5f5;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-}
-
-/* ==== WRAPPER (Konten Utama) ==== */
-.wrapper {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+}
+
+/* ==== WRAPPER ==== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ==== CARD ==== */
@@ -30,7 +30,7 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* ==== TEKS ==== */
+/* ==== TEXT ==== */
 .card h1 {
   margin-bottom: 10px;
   font-size: 24px;
@@ -42,7 +42,7 @@ body {
   color: #555;
 }
 
-/* ==== INPUT URL ==== */
+/* ==== INPUT ==== */
 input {
   width: 100%;
   padding: 12px;
@@ -55,7 +55,7 @@ input {
 
 /* ==== BUTTON ==== */
 button {
-  background-color: #e53935; /* Merah utama */
+  background-color: #e53935;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -68,11 +68,10 @@ button {
 }
 
 button:hover {
-  background-color: #c62828; /* Merah lebih gelap saat hover */
+  background-color: #c62828;
 }
 
-
-/* ==== HASIL DOWNLOAD ==== */
+/* ==== RESULT ==== */
 #result {
   margin-top: 20px;
   word-wrap: break-word;
@@ -87,14 +86,13 @@ button:hover {
 
 /* ==== FOOTER ==== */
 footer {
+  margin-top: 20px;
   text-align: center;
   font-size: 14px;
   color: #888;
-  padding: 20px;
-  margin-top: -10px; /* ⬅️ Ini yang menaikkan posisi */
 }
 
-/* ==== RESPONSIVE (Mobile) ==== */
+/* ==== RESPONSIVE ==== */
 @media screen and (max-width: 480px) {
   .card {
     padding: 20px;
@@ -108,8 +106,7 @@ footer {
     font-size: 13px;
   }
 
-  input,
-  button {
+  input, button {
     font-size: 14px;
     padding: 10px;
   }
